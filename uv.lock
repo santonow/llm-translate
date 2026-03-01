@@ -136,7 +136,7 @@ wheels = [
 [[package]]
 name = "translate-subtitles"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "httpx" },
     { name = "pysrt" },
