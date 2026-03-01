@@ -16,7 +16,7 @@ dev = [
 ]
 
 [project.scripts]
-translate = "translate:main"
+translate = "src.translate:main"
 
 [build-system]
 requires = ["hatchling >= 1.26"]
