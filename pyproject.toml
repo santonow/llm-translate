@@ -16,11 +16,11 @@ dev = [
 ]
 
 [project.scripts]
-translate = "src.translate:main"
+translate = "translate:main"
 
 [build-system]
 requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/translate"]
+src = ["src"]
