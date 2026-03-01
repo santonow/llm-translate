@@ -49,5 +49,5 @@ uv run python translate.py movie.mp4
 - Muxes the new Polish track back into a new file named movie_PL.mp4.
 
 ## Limitations
-- Because of the rolling 2-sentence context, no parallelism is achieved (maybe some in k-v cache by the LLM server itself), best to parallelize over the subtitle files if possible.
+- Because of the rolling 2-sentence context, no parallelism is achieved, best to parallelize over the subtitle files if possible.
 - Obvious gender issues (LLM doesn't see who's on the screen).
