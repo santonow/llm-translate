@@ -9,9 +9,13 @@ A Python script to extract, translate (via local LLM), and re-insert Polish subt
 
 ## Usage
 
+```bash
+uvx --from https://github.com/santonow/llm-translate.git translate --help
+```
+
 #### Help:
 ```
-uv run translate.py --help
+uvx --from https://github.com/santonow/llm-translate.git translate --help
 usage: translate.py [-h] [--test] [--limit LIMIT] [--subtitle-track SUBTITLE_TRACK] file
 
 Translate subtitles of MP4 file from English to Polish using a locally hosted LLM.
@@ -30,13 +34,13 @@ options:
 #### Full Translation:
 
 ```bash
-uv run python translate.py movie.mp4
+uvx --from https://github.com/santonow/llm-translate.git translate movie.mp4
 ```
 
 #### Test Mode (Preview only):
 
 ```bash
- uv runpython translate .py movie.mp4 --test --limit 10
+uvx --from https://github.com/santonow/llm-translate.git translate movie.mp4 --test --limit 10
 ```
 
 ## How it works
